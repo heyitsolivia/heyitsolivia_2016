@@ -2,22 +2,31 @@
 layout: default
 ---
 
-<div class="home">
+<main>
+    <div class="container clearfix mt4 mxn2 px2">
+        <div class="col sm-col sm-col-10 md-col-7">
+            <h1 class="mb3">Olivia Cheng</h1>
+            <p>
+                I spend my days and nights building interactions for the internets and thinking about design systems.
+                I have feelings about oxford commas and pocky.
+            </p>
+            <p>
+                Currently designing for <a href="https://sunlightfoundation.com">Sunlight Foundation</a>.
+            </p>
+        </div>
+    </div>
+</main>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<footer>
+    <div class="container clearfix mt4 mxn2 px2">
+        <div="sm-col sm-col-10 md-col-7">
+            <p>
+                <a class="mr2" href="https://twitter.com/heyits0livia">Twitter</a>
+                <a class="mr2" href="https://github.com/heyitsolivia">Github</a>
+                <a class="mr2" href="https://dribbble.com/heyitsolivia">Dribbble</a>
+                <a class="mr2" href="https://instagram.com/heyits0livia">Instagram</a>
+                <a class="mr2" href="mailto:olivia@heyitsolivia.com">Email</a>
+            </p>
+        </div>
+    </div>
+</footer>
