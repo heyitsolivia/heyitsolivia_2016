@@ -1,6 +1,6 @@
 ---
 ---
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-
-@import 'variables';
+@import 'basscss';
+@import 'normalize';
+@import 'typography';
