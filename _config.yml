@@ -1,7 +1,7 @@
 # Site settings
-title: heyitsolivia
-description: I make things on the internet
+title: Olivia Cheng
+description: I make things for humans
 author: heyitsolivia
 
-baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://heyitsolivia.github.io"
+baseurl:
