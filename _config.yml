@@ -5,3 +5,8 @@ author: heyitsolivia
 
 url: "https://heyitsolivia.github.io"
 baseurl:
+
+
+
+sass:
+    sass_dir: assets/_sass
