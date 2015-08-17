@@ -20,6 +20,63 @@ p {
     margin-bottom: 1.5em;
 }
 
+.container {
+    max-width: 40em;
+}
+
+
+.article {
+
+    header {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 25px;
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 75px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .tag {
+        display: inline-block;
+        background: #eee;
+        padding: 4px 8px;
+        margin-top: 4px;
+        text-transform: lowercase;
+        font-family: 'brandon-grotesque', 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 13px;
+
+    }
+
+    .separator {
+        width: 175px;
+        border: none;
+        border-top: 3px solid #ccc;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    img {
+        margin-bottom: 25px;
+    }
+}
+
 
 
 
