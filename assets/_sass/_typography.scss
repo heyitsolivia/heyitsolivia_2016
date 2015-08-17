@@ -1,19 +1,35 @@
 // General Typography
 
 body {
-  font-family: 'source-serif-pro', Georgia, serif;
-  line-height: 1.5;
-  font-size: 16px;
-  color: #333;
-  text-rendering: optimizeLegibility;
+    font-family: 'source-serif-pro', Georgia, serif;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #333;
+    text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'brandon-grotesque', 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 600;
-  line-height: 1.25;
-  margin-top: 1em;
-  margin-bottom: .5em;
+    font-family: 'brandon-grotesque', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.logo {
+    font-family: 'brandon-grotesque', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    color: #333;
+    text-decoration: none;
+
+    &:hover {
+        color: #00aaaa;
+        text-decoration: none;
+    }
 }
 
 p {
@@ -24,10 +40,17 @@ p {
     max-width: 40em;
 }
 
+main {
+    border-top: 1px solid #eee; 
+    border-bottom: 1px solid #eee; 
+    background: #fcfcfc;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
 
 .article {
 
-    header {
+    .overview {
         margin-top: 100px;
         margin-bottom: 100px;
     }
@@ -77,6 +100,11 @@ p {
     }
 }
 
-
+footer {
+    p {
+        font-family: 'brandon-grotesque', 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 16px;
+    }
+}
 
 
