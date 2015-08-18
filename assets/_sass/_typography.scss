@@ -81,7 +81,15 @@ p {
         text-transform: lowercase;
         font-family: 'brandon-grotesque', 'Helvetica Neue', Helvetica, sans-serif;
         font-size: 13px;
+        color: #333;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background 200ms;
 
+        &:hover {
+            background: #00aaaa;
+            // color: #fff;
+        }
     }
 
     .separator {
