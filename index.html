@@ -2,34 +2,35 @@
 layout: default
 ---
 
-<main>
-    <div class="container clearfix mt4 mxn2 px2">
-        <div class="col sm-col sm-col-10 md-col-7">
-            <h1 class="mb3">Olivia Cheng</h1>
-            <p>
-                I make things for humans.
-            </p>
-            <p>
-                My days and nights are spent building interactions and thinking about design systems.
-                I have opinions about oxford commas and pocky.
-            </p>
-            <p>
-                Currently designing at Sunlight Foundation.
-            </p>
+<main class="resume">
+    <header>
+        <div class="container clearfix mt4 mxn2 mb4 px2">
+            <div class="col sm-col-10">
+                <h1 class="mb3">Olivia Cheng</h1>
+                <p>
+                    I make things for humans.
+                </p>
+                <p>
+                    My days and nights are spent building interactions and thinking about design systems.
+                    Strong opinions about oxford commas and pocky.
+                </p>
+                <p>
+                    Currently designing at Sunlight Foundation.
+                </p>
+            </div>
         </div>
-    </div>
-</main>
+    </header>
 
-<footer>
-    <div class="container clearfix mt4 mxn2 px2">
-        <div="sm-col sm-col-10 md-col-7">
-            <p>
-                <a class="mr2" href="https://twitter.com/heyits0livia">Twitter</a>
-                <a class="mr2" href="https://github.com/heyitsolivia">Github</a>
-                <a class="mr2" href="https://dribbble.com/heyitsolivia">Dribbble</a>
-                <a class="mr2" href="https://instagram.com/heyits0livia">Instagram</a>
-                <a class="mr2" href="mailto:olivia@heyitsolivia.com">Email</a>
-            </p>
-        </div>
-    </div>
-</footer>
+    <section class="content">
+        <div class="container px2">
+
+            {% for work in site.work %}
+            <h2><a href="{{ work.url }}">{{ work.title }}</a></h2>
+            {% endfor %}
+
+    </section>
+
+    <footer class="container mt3 mxn2 mb3 px2">
+        <p>I’m <a href="http://twitter.com/heyits0livia">@heyits0livia</a> on Twitter. Also on <a href="https://github.com/heyitsolivia">Github</a>, <a href="https://dribbble.com/heyitsolivia">Dribbble</a>, and <a href="https://instagram.com/heyits0livia/">Instagram</a>. Optionally, send an <a href="mailto:olivia@heyitsolivia.com">email</a>.</p>
+    </footer>
+</main>
