@@ -16,6 +16,45 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5em;
 }
 
+p {
+    margin-bottom: 1.5em;
+}
+
+// Global link style
+
+a {
+    color: #888;
+    text-decoration: none;
+    transition: color 200ms;
+
+    &:hover {
+        color: $brand;
+        text-decoration: none;
+    }
+}
+
+// Animated Underline link style
+.link {
+    position: relative;
+    text-shadow: 1px 1px #fff, -1px 1px #fff;
+    z-index: 0;
+    &:after {
+        content: '';
+        width: 0%;
+        position: absolute;
+        border-bottom: 1px solid #00aaaa;
+        left: 0;
+        bottom: 2px;
+        z-index: -1;
+        transition: width 200ms ease-out;
+    }
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+// Logo
+
 .logo {
     font-family: 'brandon-grotesque', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
@@ -32,9 +71,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-p {
-    margin-bottom: 1.5em;
-}
+
 
 .article {
     background: #fcfcfc;

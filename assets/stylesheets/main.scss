@@ -1,8 +1,10 @@
 ---
 ---
 
-@import 'basscss';
 @import 'normalize';
+@import 'basscss';
+
+@import 'variables';
 @import 'layout';
 @import 'typography';
 @import 'resume';
