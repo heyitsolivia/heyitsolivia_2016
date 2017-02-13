@@ -6,12 +6,13 @@ layout: index
     {% include intro_block.html %}
 
     <section class="content">
-        <div class="container px2">
-
+        <div>
             {% for work in site.work %}
-            <h2><a class="link" href="{{ work.url }}">{{ work.title }}</a></h2>
+            <h2>
+                <a class="link" href="{{ work.url }}">{{ work.title }}</a>
+            </h2>
             {% endfor %}
-
+        </div>
     </section>
 
 </main>

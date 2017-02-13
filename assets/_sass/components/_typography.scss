@@ -1,4 +1,4 @@
-// General Typography
+// Typography
 
 body {
     font-family: 'source-serif-pro', Georgia, serif;
@@ -28,7 +28,7 @@ a {
     transition: color 200ms;
 
     &:hover {
-        color: $brand;
+        color: $primary-color;
         text-decoration: none;
     }
 }
