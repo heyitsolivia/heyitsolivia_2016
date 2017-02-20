@@ -13,17 +13,6 @@
     @include breakpoint(large){
         font-size: 1rem;
     }
-
-    // a {
-    //     color: inherit;
-    //     text-decoration: none;
-    //     transition: color 200ms;
-
-    //     &:hover {
-    //         color: $primary-color;
-    //         text-decoration: none;
-    //     }
-    // }
 }
 
 .heading--large {
@@ -31,6 +20,8 @@
     text-transform: uppercase;
     font-size: 2rem;
     color: $primary-color;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
 }
 
 %heading--medium,
