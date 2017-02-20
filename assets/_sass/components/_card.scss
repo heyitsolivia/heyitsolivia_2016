@@ -1,0 +1,43 @@
+// Card Component
+
+.card {
+    margin-bottom: 4rem;
+    box-sizing: border-box;
+    @include breakpoint(medium) {
+        max-width: 20rem;
+    }
+}
+
+.card--showcase {
+    border-radius: 3px;
+}
+
+    .card__heading {
+        @extend %heading--medium;
+        margin-bottom: 0.5rem;
+        color: $white;
+
+        &:after {
+            content: '';
+            display: block;
+            border-bottom: 2px solid $white;
+            width: 2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .card__summary {
+        p {
+            @extend %text--medium;
+            margin: 0;
+            color: $white;
+        }
+    }
+
+    .card__thumbnail {
+        width: 100%;
+        height: 200px;
+        background-color: navy;
+        border-radius: 3px 3px 0 0;
+    }

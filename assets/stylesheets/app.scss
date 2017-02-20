@@ -2,15 +2,19 @@
 ---
 
 @import 'settings';
+@import 'mixins';
+@import 'utilities';
 @import 'vendors/normalize';
 
 
 // Mixins
 
 // Components
-@import 'components/grid';
+@import 'vendors/flexboxgrid';
 @import 'components/typography';
-@import 'resume';
+@import 'components/hero';
+@import 'components/card';
+// @import 'resume';
 
 // Base
 @import 'base';

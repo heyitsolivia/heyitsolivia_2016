@@ -1,3 +1,70 @@
-.container {
-    max-width: 40em;
+  html {
+    box-sizing: border-box;
+    // font-size: $global-font-size;
+    background-color: $black;
+  }
+
+  // Set box-sizing globally to handle padding and border widths
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+
+.section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.section--dark {
+    background: $black;
+    color: $white;
+}
+
+.container-fluid {
+    max-width: map-get($breakpoints, large);
+    margin: auto;
+    padding: {
+        left: 4rem;
+        right: 4rem;
+    }
+}
+
+// Logo
+
+.logo {
+    font-family: $font-family-sans;
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: $text-color;
+    text-decoration: none;
+    letter-spacing: 6px;
+
+    @include breakpoint(medium) {
+        font-size: 3rem;
+    }
+
+    @include breakpoint(large) {
+        font-size: 3.75rem;
+    }
+
+    &:after {
+        content: '';
+        display: inline-block;
+        height: 3rem;
+        width: 2rem;
+        background-color: #eee;
+        vertical-align: top;
+        margin-top: 0.75rem;
+        margin-left: 0.75rem;
+    }
 }

@@ -2,17 +2,34 @@
 layout: index
 ---
 
-<main class="resume">
+<main>
     {% include intro_block.html %}
 
-    <section class="content">
-        <div>
-            {% for work in site.work %}
-            <h2>
-                <a class="link" href="{{ work.url }}">{{ work.title }}</a>
-            </h2>
-            {% endfor %}
+    <section class="section section--dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="heading--large">Work</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                {% for work in site.work %}
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card__summary">
+                            <a class="card__heading" href="{{ work.url }}">{{ work.title }}</a>
+                            <p class="">{{ work.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
+    </section>
+
+    <section class="container">
+
     </section>
 
 </main>

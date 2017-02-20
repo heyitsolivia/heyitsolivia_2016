@@ -1,18 +1,48 @@
-// Typefaces
+// Typography
+$global-font-size: 100%;
 
-$source-serif-pro: 'Source Serif Pro';
+$source-serif-pro: 'Vollkorn';
+$brandon-grotesque: 'brandon-grotesque';
+
+
+// Font Families
+$font-family-serif: $source-serif-pro, Georgia, serif;
+$font-family-sans: $brandon-grotesque, 'Helvetica Neue', Helvetica, sans-serif;
+
+
+// Colors
+$seamint: #98efdc;
+$inkblack: #222222;
+$black: #2a2a2a;
+$white: #ffffff;
+
 
 // Palette
-$iceblue: #f5fffe;
-$mintgreen: #2DC6A6;
-$inkblack: #222222;
+$primary-color: $seamint;
+$accent-color: $seamint;
+$text-color: $inkblack;
 
-// Color
-$primary-color: $mintgreen;
+$colors: (
+    primary: $seamint,
+    accent: $seamint,
+);
+
+
+// Breakpoints
+$breakpoints: (
+    xsmall: 0,
+    small: 420px,
+    medium: 640px,
+    large: 1024px,
+    xlarge: 1200px,
+    xxlarge: 1440px,
+);
+
 
 // Animation
 $default-transition-speed: 200ms;
 $default-transition-ease: ease-in;
+
 
 // Z-index
 $z0 : 0;
@@ -21,3 +51,4 @@ $z2 : 20;
 $z3 : 30;
 $z4 : 40;
 $z5 : 50;
+
