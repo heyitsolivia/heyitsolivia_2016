@@ -7,23 +7,25 @@ layout: index
 
     <section class="section section--dark">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
+            <div class="row center-sm">
+                <div class="col-sm-12 col-md-11">
                     <h1 class="heading--large">Work</h1>
                 </div>
             </div>
 
-            <div class="row">
-                {% for work in site.work %}
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card__summary">
-                            <a class="card__heading" href="{{ work.url }}">{{ work.title }}</a>
-                            <p class="">{{ work.description }}</p>
+            <div class="row center-sm">
+                <div class="col-sm-12 col-md-11">
+                    <div class="cardgrid">
+                        {% for work in site.work %}
+                        <div class="card">
+                            <div class="card__summary">
+                                <a class="card__heading" href="{{ work.url }}">{{ work.title }}</a>
+                                <p class="">{{ work.description }}</p>
+                            </div>
                         </div>
+                        {% endfor %}
                     </div>
                 </div>
-                {% endfor %}
             </div>
         </div>
     </section>

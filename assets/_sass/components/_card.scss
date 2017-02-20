@@ -1,15 +1,32 @@
 // Card Component
 
-.card {
-    margin-bottom: 4rem;
-    box-sizing: border-box;
+
+// Card Grid
+.cardgrid {
     @include breakpoint(medium) {
-        max-width: 20rem;
+        column-count: 2;
+        column-gap: 2rem;
+    }
+
+    @include breakpoint(large) {
+        column-gap: 10rem;
     }
 }
 
-.card--showcase {
-    border-radius: 3px;
+
+// Card
+.card {
+    margin-bottom: 4rem;
+    box-sizing: border-box;
+    max-width: 22rem;
+
+    @include breakpoint(medium) {
+        max-width: 18rem;
+    }
+
+    &:first-child {
+        margin-top: 4rem;
+    }
 }
 
     .card__heading {

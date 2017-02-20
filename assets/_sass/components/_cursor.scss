@@ -1,0 +1,16 @@
+// Cursor
+
+.cursor {
+    margin: 0;
+    padding-right: 0.25em;
+    line-height: 1;
+    display: inline-block;
+    border-right: 0.75em solid rgba(0, 0, 0, 0.075);
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% { border-color: rgba(0, 0, 0, 0.075); }
+    50% { border-color: rgba(0, 0, 0, 0); }
+    100% { border-color: rgba(0, 0, 0, 0.075); }
+}
