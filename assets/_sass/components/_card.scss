@@ -16,8 +16,8 @@
 
 // Card
 .card {
-    margin-bottom: 4rem;
     box-sizing: border-box;
+    margin-bottom: 3rem;
     max-width: 22rem;
 
     @include breakpoint(medium) {
@@ -31,30 +31,21 @@
 
     .card__heading {
         @extend %heading--medium;
-        margin-bottom: 0.5rem;
         color: $white;
+        margin-bottom: 0.5rem;
 
         &:after {
             content: '';
-            display: block;
             border-bottom: 2px solid $white;
+            display: block;
+            margin-bottom: 0.65rem;
+            margin-top: 0.65rem;
             width: 2rem;
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
         }
     }
 
     .card__summary {
-        p {
-            @extend %text--medium;
-            margin: 0;
-            color: $white;
-        }
-    }
-
-    .card__thumbnail {
-        width: 100%;
-        height: 200px;
-        background-color: navy;
-        border-radius: 3px 3px 0 0;
+        @extend %text--medium;
+        color: $white;
+        margin: 0;
     }

@@ -1,0 +1,17 @@
+// Section
+
+.section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.section--dark {
+    background: $black;
+    color: $white;
+}
+
+.section__heading {
+    @extend %heading--large;
+    color: $primary-color;
+    margin-bottom: 3rem;
+}

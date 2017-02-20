@@ -9,19 +9,37 @@
         top: 0;
         bottom: 1rem;
     }
+    text-transform: uppercase;
 
     @include breakpoint(large){
         font-size: 1rem;
     }
 }
 
+
+%heading--jumbo,
+.heading--jumbo  {
+    @extend %heading;
+    font-size: 1.75rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+
+    @include breakpoint(medium) {
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+
+    @include breakpoint(large) {
+        font-size: 3.75rem;
+        letter-spacing: 6px;
+    }
+}
+
+%heading--large,
 .heading--large {
     @extend %heading;
-    text-transform: uppercase;
     font-size: 2rem;
-    color: $primary-color;
-    letter-spacing: 5px;
-    margin-bottom: 2rem;
+    letter-spacing: 6px;
 }
 
 %heading--medium,
