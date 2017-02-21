@@ -2,34 +2,25 @@
 layout: index
 ---
 
-<main>
-    {% include intro_block.html %}
-
-    <section class="section section--dark">
-        <div class="container-fluid">
-            <div class="row center-sm">
-                <div class="col-sm-12 col-md-11">
-                    <h1 class="section__heading cursor cursor--dark">Work</h1>
-                </div>
+<section class="section section--dark">
+    <div class="container-fluid">
+        <div class="row center-sm">
+            <div class="col-sm-12 col-md-11">
+                <h1 class="section__heading cursor cursor--dark">Work</h1>
             </div>
+        </div>
 
-            <div class="row center-sm">
-                <div class="col-sm-12 col-md-11">
-                    <div class="cardgrid">
-                        {% for work in site.work %}
-                        <a class="card" href="{{ work.url }}">
-                            <h2 class="card__heading">{{ work.title }}</h2>
-                            <p class="card__summary">{{ work.description }}</p>
-                        </a>
-                        {% endfor %}
-                    </div>
+        <div class="row center-sm">
+            <div class="col-sm-12 col-md-11">
+                <div class="cardgrid">
+                    {% for work in site.work %}
+                    <a class="card" href="{{ work.url }}">
+                        <h2 class="card__heading">{{ work.title }}</h2>
+                        <p class="card__summary">{{ work.description }}</p>
+                    </a>
+                    {% endfor %}
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="container">
-
-    </section>
-
-</main>
+    </div>
+</section>

@@ -2,7 +2,6 @@
 
 html {
     box-sizing: border-box;
-    background-color: $black;
 }
 
 // Set box-sizing globally to handle padding and border widths
@@ -19,8 +18,8 @@ html {
     max-width: map-get($breakpoints, large);
     margin: auto;
     padding: {
-        left: 2rem;
-        right: 2rem;
+        left: 2.5rem;
+        right: 2.5rem;
     }
 
     @include breakpoint(small) {

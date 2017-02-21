@@ -1,8 +1,17 @@
 // Section
 
 .section {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @include breakpoint(medium){
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    & + & {
+        padding-top: 0;
+    }
 }
 
 .section--dark {
@@ -10,8 +19,9 @@
     color: $white;
 }
 
-.section__heading {
-    @extend %heading--large;
-    color: $primary-color;
-    margin-bottom: 3rem;
-}
+    .section__heading {
+        @extend %heading--large;
+        color: $primary-color;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }

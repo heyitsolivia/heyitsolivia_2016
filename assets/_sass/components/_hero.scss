@@ -2,7 +2,9 @@
 
 .hero {
     background-color: $white;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    color: $text-color;
     padding: {
         top: 8rem;
         bottom: 5rem;
