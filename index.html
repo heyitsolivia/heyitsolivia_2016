@@ -17,10 +17,10 @@ layout: index
                 <div class="col-sm-12 col-md-11">
                     <div class="cardgrid">
                         {% for work in site.work %}
-                        <div class="card">
-                            <h2 class="card__heading" href="{{ work.url }}">{{ work.title }}</h2>
+                        <a class="card" href="{{ work.url }}">
+                            <h2 class="card__heading">{{ work.title }}</h2>
                             <p class="card__summary">{{ work.description }}</p>
-                        </div>
+                        </a>
                         {% endfor %}
                     </div>
                 </div>
