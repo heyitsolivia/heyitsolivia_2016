@@ -3,17 +3,15 @@
 .logo {
     @extend %heading--jumbo;
     color: $text-color;
-    letter-spacing: 4px;
+    letter-spacing: 0.12em;
     margin-bottom: 1.25rem;
 
     @include breakpoint(medium) {
         font-size: 3rem;
-        letter-spacing: 5px;
         margin-bottom: 2rem;
     }
 
     @include breakpoint(large) {
         font-size: 3.75rem;
-        letter-spacing: 6px;
     }
 }

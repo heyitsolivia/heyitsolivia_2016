@@ -13,6 +13,12 @@ html {
 }
 
 
+body {
+    @extend %text--medium;
+    color: $text-color;
+}
+
+
 // Container
 .container-fluid {
     max-width: map-get($breakpoints, large);
@@ -35,13 +41,4 @@ html {
             right: 4rem;
         }
     }
-}
-
-
-
-
-// Links
-a {
-    color: $primary-color;
-    text-decoration: none;
 }

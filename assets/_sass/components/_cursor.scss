@@ -9,7 +9,7 @@
 }
 
 .cursor--dark {
-    border-right: 0.65em solid rgba(255, 255, 255, 0.08);
+    border-right: 0.65em solid rgba(255, 255, 255, 0.1);
     animation: blink--dark 1.5s infinite;
 }
 
@@ -20,7 +20,7 @@
 }
 
 @keyframes blink--dark {
-    0% { border-color: rgba(255, 255, 255, 0.08); }
+    0% { border-color: rgba(255, 255, 255, 0.1); }
     50% { border-color: rgba(255, 255, 255, 0); }
-    100% { border-color: rgba(255, 255, 255, 0.08); }
+    100% { border-color: rgba(255, 255, 255, 0.1); }
 }
