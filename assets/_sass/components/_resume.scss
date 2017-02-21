@@ -1,0 +1,34 @@
+// Resume
+
+.resume {
+    max-width: 38em;
+
+    @include breakpoint(medium) {
+        font-size: 1.125rem;
+    }
+
+    .section__heading {
+        margin-bottom: 3rem;
+    }
+
+    .section__heading--small {
+        // margin-top: 4rem;
+    }
+}
+
+.resume__section {
+    margin-bottom: 3rem;
+}
+
+ul {
+    padding-left: 1rem;
+    list-style: circle;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.timespan {
+    float: right;
+}
