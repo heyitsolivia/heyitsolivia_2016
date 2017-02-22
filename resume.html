@@ -2,7 +2,9 @@
 layout: index
 ---
 
-<section class="section">
+{% include intro_block.html class="section--light" %}
+
+<main class="section section--light">
     <div class="container-fluid">
         <div class="row center-sm">
             <div class="col-sm-12 col-md-11">
@@ -54,7 +56,7 @@ layout: index
 
                     <h2 class="section__heading cursor">Tools I Use</h2>
                     <div class="resume__section">
-                        HTML, CSS, Sass, JavaScript, Node.JS, Vue.js, Gulp, Python, Django, Ruby, Rails, Git
+                        HTML, CSS, Sass, JavaScript, Node.js, Vue.js, Gulp, Python, Django, Ruby, Rails, Git
                         <br>
                         Illustrator, Sketch, Photoshop, Invision, InDesign, Balsamiq Mockups
                     </div>
@@ -70,7 +72,10 @@ layout: index
             </div>
         </div>
     </div>
-</section>
+</main>
+
+{% include footer.html %}
+
 <!--
     <footer>
         <div class="container clearfix mt2 mxn2 mb4 px2">

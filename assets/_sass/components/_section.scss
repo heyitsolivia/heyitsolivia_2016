@@ -14,19 +14,24 @@
     }
 }
 
+.section--light {
+    background: #f9f9f9;
+}
+
 .section--dark {
     background: $black;
     color: $white;
-
-    .section__heading {
-        color: $primary-color;
-    }
 }
 
     .section__heading {
         @extend %heading--large;
+        letter-spacing: 0.17em;
         margin-top: 3rem;
         margin-bottom: 3rem;
+
+        .section--dark & {
+            color: $primary-color;
+        }
     }
 
     .section__heading--small {
