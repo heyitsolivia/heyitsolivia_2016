@@ -8,10 +8,6 @@
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
-
-    & + & {
-        padding-top: 0;
-    }
 }
 
 .section--light {
@@ -22,6 +18,10 @@
     background: $black;
     color: $white;
 }
+
+    .section__text-wrapper {
+        max-width: 42.5rem;
+    }
 
     .section__heading {
         @extend %heading--large;

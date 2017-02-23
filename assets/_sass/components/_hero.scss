@@ -11,10 +11,12 @@
     }
 
     @include breakpoint(small) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
 
     @include breakpoint(medium) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
         padding: {
             top: 10rem;
@@ -23,6 +25,7 @@
     }
 
     @include breakpoint(large) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         padding: {
             top: 12rem;
