@@ -1,0 +1,44 @@
+// Base
+
+html {
+    box-sizing: border-box;
+}
+
+// Set box-sizing globally to handle padding and border widths
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    @extend %text--medium;
+    color: $text-color;
+}
+
+
+// Container
+.container-fluid {
+    max-width: map-get($breakpoints, large);
+    margin: auto;
+    padding: {
+        left: 2.5rem;
+        right: 2.5rem;
+    }
+
+    @include breakpoint(small) {
+        padding: {
+            left: 3rem;
+            right: 3rem;
+        }
+    }
+
+    @include breakpoint(medium) {
+        padding: {
+            left: 4rem;
+            right: 4rem;
+        }
+    }
+}

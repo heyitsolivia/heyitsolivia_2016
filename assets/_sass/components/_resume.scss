@@ -1,0 +1,36 @@
+// Resume
+
+.resume {
+    @include breakpoint(medium) {
+        font-size: 1.125rem;
+    }
+
+    .section__heading {
+        margin-bottom: 3rem;
+    }
+
+    .section__heading--small {
+        // margin-top: 4rem;
+    }
+}
+
+    .resume__group {
+        margin-bottom: 3rem;
+    }
+
+
+    .resume__title {
+        display: none;
+
+        &::after {
+            content: ",";
+        }
+
+        @include breakpoint(medium) {
+            display: inline;
+        }
+    }
+
+    .resume__timespan {
+        float: right;
+    }

@@ -1,0 +1,47 @@
+// Section
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @include breakpoint(medium){
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+.section--light {
+    background: #f9f9f9;
+}
+
+.section--dark {
+    background: $black;
+    color: $white;
+}
+
+    .section__text-wrapper {
+        max-width: 42.5rem;
+    }
+
+    .section__heading {
+        @extend %heading--large;
+        letter-spacing: 0.17em;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        .section--dark & {
+            color: $primary-color;
+        }
+    }
+
+    .section__heading--small {
+        @extend %heading--medium;
+    }
+
+
+// TODO: Refactor
+
+.navigation {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

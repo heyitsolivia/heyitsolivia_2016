@@ -2,32 +2,29 @@
 layout: index
 ---
 
-<main class="resume">
-    <header>
-        <div class="container clearfix mt4 mxn2 mb4 px2">
-            <div class="col sm-col-10">
-                <h1 class="mb3">Olivia Cheng</h1>
-                <p>
-                    I make things for humans.
-                </p>
-                <p>
-                    My days and nights are spent building interactions and thinking about design systems.
-                    Strong opinions about oxford commas and pocky.
-                </p>
-                <p>
-                    Currently developing &amp; designing at <a href="https://isl.co/">ISL</a>.
-                </p>
+{% include intro_block.html class="section--dark" %}
+
+<main class="section section--dark">
+    <div class="container-fluid">
+        <div class="row center-sm">
+            <div class="col-sm-12 col-md-11">
+                <h1 class="section__heading cursor cursor--dark">Work</h1>
             </div>
         </div>
-    </header>
 
-    <section class="content">
-        <div class="container px2">
-
-            {% for work in site.work %}
-            <h2><a class="link" href="{{ work.url }}">{{ work.title }}</a></h2>
-            {% endfor %}
-
-    </section>
-
+        <div class="row center-sm">
+            <div class="col-sm-12 col-md-11">
+                <div class="cardgrid">
+                    {% for work in site.work %}
+                    <a class="card" href="{{ work.url }}">
+                        <h2 class="card__heading">{{ work.title }}</h2>
+                        <p class="card__summary">{{ work.description }}</p>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
+
+{% include footer.html class="section--dark" %}

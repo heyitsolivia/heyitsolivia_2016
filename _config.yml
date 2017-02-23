@@ -16,3 +16,5 @@ collections:
 
 sass:
     sass_dir: assets/_sass
+
+host: 0.0.0.0

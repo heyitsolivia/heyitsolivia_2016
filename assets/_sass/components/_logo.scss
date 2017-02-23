@@ -1,0 +1,37 @@
+// Logo
+
+.logo {
+    @extend %heading--jumbo;
+    color: $text-color;
+    letter-spacing: 0.12em;
+    margin-bottom: 1.25rem;
+
+    @include breakpoint(medium) {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    @include breakpoint(large) {
+        font-size: 3.75rem;
+    }
+}
+
+.logo--small {
+    @extend %heading--large;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    color: $text-color;
+    margin-bottom: 0;
+
+    @include breakpoint(medium) {
+        // font-size: 1.75rem;
+    }
+
+    @include breakpoint(large) {
+        // font-size: 1.75rem;
+    }
+}
+
+    .logo__space {
+        display: none;
+    }

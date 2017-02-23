@@ -1,0 +1,46 @@
+// Hero
+
+.hero {
+    background-color: $white;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    color: $text-color;
+    padding: {
+        top: 8rem;
+        bottom: 5rem;
+    }
+
+    @include breakpoint(small) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    @include breakpoint(medium) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        padding: {
+            top: 10rem;
+            bottom: 7rem;
+        }
+    }
+
+    @include breakpoint(large) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        padding: {
+            top: 12rem;
+            bottom: 9rem;
+        }
+    }
+}
+
+.hero__summary {
+    font-size: 1rem;
+    margin-bottom: 3.5rem;
+    max-width: 30em;
+
+    @include breakpoint(medium) {
+        font-size: 1.25rem;
+        margin-bottom: 5rem;
+    }
+}

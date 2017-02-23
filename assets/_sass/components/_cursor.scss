@@ -1,0 +1,26 @@
+// Cursor
+
+.cursor {
+    padding-right: 0.25em;
+    line-height: 1;
+    display: inline-block;
+    border-right: 0.65em solid rgba(0, 0, 0, 0.075);
+    animation: blink 1.5s infinite;
+}
+
+.cursor--dark {
+    border-right: 0.65em solid rgba(255, 255, 255, 0.1);
+    animation: blink--dark 1.5s infinite;
+}
+
+@keyframes blink {
+    0% { border-color: rgba(0, 0, 0, 0.075); }
+    50% { border-color: rgba(0, 0, 0, 0); }
+    100% { border-color: rgba(0, 0, 0, 0.075); }
+}
+
+@keyframes blink--dark {
+    0% { border-color: rgba(255, 255, 255, 0.1); }
+    50% { border-color: rgba(255, 255, 255, 0); }
+    100% { border-color: rgba(255, 255, 255, 0.1); }
+}

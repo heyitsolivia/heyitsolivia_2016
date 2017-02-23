@@ -1,0 +1,111 @@
+// Typography
+
+
+// Headings
+
+%heading {
+    font-family: $font-family-sans;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin: {
+        top: 0;
+        bottom: 1rem;
+    }
+}
+
+
+%heading--jumbo,
+.heading--jumbo  {
+    @extend %heading;
+    font-size: 1.75rem;
+    font-weight: 900;
+
+    @include breakpoint(medium) {
+        font-size: 3rem;
+    }
+
+    @include breakpoint(large) {
+        font-size: 3.75rem;
+    }
+}
+
+
+%heading--large,
+.heading--large {
+    @extend %heading;
+    font-size: 1.5rem;
+
+    @include breakpoint(medium) {
+        font-size: 1.75rem;
+    }
+
+    @include breakpoint(large) {
+        font-size: 2rem;
+    }
+}
+
+%heading--medium,
+.heading--medium {
+    @extend %heading;
+    letter-spacing: 0.12em;
+}
+
+
+// Body Type
+
+%text--medium,
+.text--medium {
+    font-family: $font-family-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+
+// Links
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        width: 0;
+        border-bottom: 1px solid $primary-color;
+        transition: width 250ms ease-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+
+// Unordered Lists
+
+.list {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: circle;
+
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
+.list--condensed {
+    li {
+        margin-bottom: 0;
+    }
+}
