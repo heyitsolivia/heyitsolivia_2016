@@ -90,3 +90,22 @@ a {
         width: 100%;
     }
 }
+
+
+// Unordered Lists
+
+.list {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: circle;
+
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
+.list--condensed {
+    li {
+        margin-bottom: 0;
+    }
+}
