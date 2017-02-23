@@ -1,45 +1,44 @@
 ---
 layout: default
 title: Email Congress
+description: A tool for contacting members of your representatives in Congress
 ---
 
-<main class="article">
-    <div class="container mt4 mxn2 mb4 px2">
-        <div class="overview">
-            <h1>
-                <span>Working / On /</span>
-                <br>
-                Email Congress
-            </h1>
-        </div>
-
-        <p>Email Congress is a rebuild of an OpenCongress service that Sunlight Foundation had originally launched a year ago as a proof of concept, allowing users to contact their representatives in Congress by email instead of navigating complex congressional webforms.</p>
-        <p>Although it was a popular tool, over time, the developers responsible for maintaining the project became bogged down answering an overwhelming number of support ticket emails regarding that feature, and it was clear that the tool in its existing state was no longer maintainable. A redesign became necessary to address many of the problems that came out of a development process that wasn’t design-driven nor user-driven.</p>
-        <p>As the lead designer on the project, I first began the redesign by identifying pain points with the existing user flows. Many of these were obvious problems voiced by users in their emails to us.</p>
-
-        <blockquote>“I get an notification that my congressmen has responded to an email, however when I click on the link, and I log in, I don’t see where the response is.”</blockquote>
-
-        <blockquote>“This letter is not showing up when I log in.”</blockquote>
-
-        <blockquote>“I got the email below, but can't find the lick to see the reply.”</blockquote>
-
-        <blockquote>“Whenever I receive a reply letter, I receive an email notification. when I click on the link, it says I don't have authorization to view the letter and I must login. When I login there is no letter…”</blockquote>
-
-        <blockquote>“The confirmation page does not operate properly. I have tried four different times in the past two days and have received the same error message each time…”</blockquote>
-
-        <blockquote>“I tried to send a few notes this morning to my representative. Every one kicked back saying I had to register. The first one only required contact info and went through. All the others request I register which you website will not allow me to do. First it rejected my email saying it was already used. Next time I used the forgot password option and when the link was sent to me I clicked on it and got a message the link was no good. Any ideas??”</blockquote>
-
-        <blockquote>“The emails won't go through to my senators because you couldn't find my congressional district even though I am trying to email my senators.”</blockquote>
-
-        <p>There were several points of confusion around having to sign up to use the service, having to log in to access responses a user recieved, and general confusion about how to use the tool. In some instances, users were confused as to who was providing the service—some people believed we were an official government service.</p>
-
-        <p>We defined all potential user flows, and identified ways to further streamline the process. We cut out bloated features that proved be unnecessary and confusing to the user. For example, official responses were stored on servers that required users to log in to access them. Additionally, since the service was tied to OpenCongress, it required users to first register for the site to use EmailCongress. We're taking out this middleman so that official email responses go directly to the user's inbox. We also simplified the signup process—it no longer requires a username and password.</p>
-
-        <p>In redesign, I wanted the primary user interface to be something users are already familiar with: their own email inbox. Following a short sign up process, which is email initiated, the service allows you to navigate congressional contact forms using unique email addresses we created for each congressperson. 90% of the interactions should happen within the user's native inbox.</p>
-
-        <p>Having defined new and improved user flows, I went through many iterations of wireframes with carefully thought out forms. We thought long and hard about the copy in both the web forms and notification emails, since these were the primary points of user interaction, but also user confusion. This was followed by several iterations of visual design.</p>
-        <img src="https://d13yacurqjgara.cloudfront.net/users/64721/screenshots/2075864/phantom-mask-form.png"/>
-        <p>When we had enough built out, we began user testing. I tested user flows with people who could represent our target audience and noted points of confusion. This feedback is going into our final iteration of EmailCongress.</p>
-        <p>We're wrapping things up but will be launching soon—more updates to come.</p>
+<article class="article">
+    <div class="overview">
+        <h1>
+            <span>Working / On /</span>
+            <br>
+            Email Congress
+        </h1>
     </div>
- </main>
+
+    <p>Email Congress is a rebuild of an OpenCongress service that Sunlight Foundation had originally launched a year ago as a proof of concept, allowing users to contact their representatives in Congress by email instead of navigating complex congressional webforms.</p>
+    <p>Although it was a popular tool, over time, the developers responsible for maintaining the project became bogged down answering an overwhelming number of support ticket emails regarding that feature, and it was clear that the tool in its existing state was no longer maintainable. A redesign became necessary to address many of the problems that came out of a development process that wasn’t design-driven nor user-driven.</p>
+    <p>As the lead designer on the project, I first began the redesign by identifying pain points with the existing user flows. Many of these were obvious problems voiced by users in their emails to us.</p>
+
+    <blockquote>“I get an notification that my congressmen has responded to an email, however when I click on the link, and I log in, I don’t see where the response is.”</blockquote>
+
+    <blockquote>“This letter is not showing up when I log in.”</blockquote>
+
+    <blockquote>“I got the email below, but can't find the lick to see the reply.”</blockquote>
+
+    <blockquote>“Whenever I receive a reply letter, I receive an email notification. when I click on the link, it says I don't have authorization to view the letter and I must login. When I login there is no letter…”</blockquote>
+
+    <blockquote>“The confirmation page does not operate properly. I have tried four different times in the past two days and have received the same error message each time…”</blockquote>
+
+    <blockquote>“I tried to send a few notes this morning to my representative. Every one kicked back saying I had to register. The first one only required contact info and went through. All the others request I register which you website will not allow me to do. First it rejected my email saying it was already used. Next time I used the forgot password option and when the link was sent to me I clicked on it and got a message the link was no good. Any ideas??”</blockquote>
+
+    <blockquote>“The emails won't go through to my senators because you couldn't find my congressional district even though I am trying to email my senators.”</blockquote>
+
+    <p>There were several points of confusion around having to sign up to use the service, having to log in to access responses a user recieved, and general confusion about how to use the tool. In some instances, users were confused as to who was providing the service—some people believed we were an official government service.</p>
+
+    <p>We defined all potential user flows, and identified ways to further streamline the process. We cut out bloated features that proved be unnecessary and confusing to the user. For example, official responses were stored on servers that required users to log in to access them. Additionally, since the service was tied to OpenCongress, it required users to first register for the site to use EmailCongress. We're taking out this middleman so that official email responses go directly to the user's inbox. We also simplified the signup process—it no longer requires a username and password.</p>
+
+    <p>In redesign, I wanted the primary user interface to be something users are already familiar with: their own email inbox. Following a short sign up process, which is email initiated, the service allows you to navigate congressional contact forms using unique email addresses we created for each congressperson. 90% of the interactions should happen within the user's native inbox.</p>
+
+    <p>Having defined new and improved user flows, I went through many iterations of wireframes with carefully thought out forms. We thought long and hard about the copy in both the web forms and notification emails, since these were the primary points of user interaction, but also user confusion. This was followed by several iterations of visual design.</p>
+    <img src="https://d13yacurqjgara.cloudfront.net/users/64721/screenshots/2075864/phantom-mask-form.png"/>
+    <p>When we had enough built out, we began user testing. I tested user flows with people who could represent our target audience and noted points of confusion. This feedback is going into our final iteration of EmailCongress.</p>
+    <p>We're wrapping things up but will be launching soon—more updates to come.</p>
+</main>

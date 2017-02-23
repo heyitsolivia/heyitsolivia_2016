@@ -6,8 +6,17 @@
 
         {% include header.html %}
 
-        {{ content }}
-        
+        <main class="section section--light">
+            <div class="container-fluid">
+                <div class="row center-sm">
+                    <div class="col-sm-12 col-md-11">
+                        <div class="section__text-wrapper">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         {% include footer.html %}
 
   </body>

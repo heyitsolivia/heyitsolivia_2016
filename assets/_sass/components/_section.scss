@@ -37,3 +37,11 @@
     .section__heading--small {
         @extend %heading--medium;
     }
+
+
+// TODO: Refactor
+
+.navigation {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
