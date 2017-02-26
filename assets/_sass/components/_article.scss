@@ -60,4 +60,15 @@
         width: 100%;
         margin-bottom: 25px;
     }
+
+    .bio_thumb {
+        display: none;
+
+        @include breakpoint(medium) {
+            display: block;
+            float: right;
+            width: 40%;
+            margin-left: 2rem;
+        }
+    }
 }
