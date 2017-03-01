@@ -22,14 +22,6 @@
     letter-spacing: 0.12em;
     color: $text-color;
     margin-bottom: 0;
-
-    @include breakpoint(medium) {
-        // font-size: 1.75rem;
-    }
-
-    @include breakpoint(large) {
-        // font-size: 1.75rem;
-    }
 }
 
     .logo__space {

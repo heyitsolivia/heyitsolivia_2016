@@ -7,7 +7,7 @@
     color: $text-color;
     padding: {
         top: 8rem;
-        bottom: 5rem;
+        bottom: 4rem;
     }
 
     @include breakpoint(small) {
@@ -20,7 +20,7 @@
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
         padding: {
             top: 10rem;
-            bottom: 7rem;
+            bottom: 6rem;
         }
     }
 
@@ -29,7 +29,7 @@
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         padding: {
             top: 12rem;
-            bottom: 9rem;
+            bottom: 8rem;
         }
     }
 }
