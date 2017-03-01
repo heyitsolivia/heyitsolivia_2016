@@ -1,0 +1,42 @@
+// Navigation
+
+.navigation {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @include breakpoint(medium) {
+        width: unset;
+        margin-top: unset;
+        margin-bottom: unset;
+        float: right;
+    }
+}
+
+
+    .navigation__divider {
+        border-left: 1px solid $gray;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+
+    // Nav links
+    .navigation__link {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        line-height: 1;
+        color: $gray;
+        transition: 250ms color, 250ms transform;
+    }
+
+        .navigation__link:hover {
+            transform: translateY(-0.25em);
+        }
+
+        .navigation__link:hover,
+        .navigation__link.is-active {
+            color: $text-color;
+        }

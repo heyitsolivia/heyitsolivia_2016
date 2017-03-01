@@ -1,0 +1,22 @@
+// Header
+
+
+.header {
+    background-color: $white;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+    @include breakpoint(small) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    }
+
+    @include breakpoint(medium) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        -webkit-clip-path: unset;
+        clip-path: unset;
+    }
+}

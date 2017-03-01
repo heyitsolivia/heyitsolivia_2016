@@ -3,7 +3,7 @@
 
 @import 'settings';
 @import 'mixins';
-@import 'utilities';
+@import 'helpers';
 @import 'vendors/normalize';
 
 
@@ -13,8 +13,10 @@
 @import 'vendors/flexboxgrid';
 @import 'components/typography';
 @import 'components/section';
-@import 'components/hero';
+@import 'components/header';
 @import 'components/footer';
+@import 'components/navigation';
+@import 'components/hero';
 @import 'components/logo';
 @import 'components/cursor';
 @import 'components/card';
@@ -23,3 +25,4 @@
 
 // Base
 @import 'base';
+@import 'utilities';

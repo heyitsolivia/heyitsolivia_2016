@@ -80,7 +80,7 @@ a {
         content: '';
         position: absolute;
         left: 0;
-        bottom: 1px;
+        bottom: 0.25em;
         width: 0;
         border-bottom: 1px solid $primary-color;
         transition: width 250ms ease-out;
