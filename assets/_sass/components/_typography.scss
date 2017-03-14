@@ -91,6 +91,14 @@ a {
     }
 }
 
+.section--dark .link {
+    color: $accent-color;
+
+    &::after {
+        border-color: $accent-color;
+    }
+}
+
 
 // Unordered Lists
 

@@ -42,7 +42,7 @@
         position: absolute;
         display: block;
         height: 0;
-        border-left: 2px solid $primary-color;
+        border-left: 2px solid $accent-color;
 
         transform: translateX(-1rem) translateY(2rem);
         transition: transform 200ms, height 300ms;
@@ -61,7 +61,7 @@
             content: '';
             display: block;
             width: 2rem;
-            border-bottom: 2px solid $primary-color;
+            border-bottom: 2px solid $accent-color;
             margin-bottom: 0.65rem;
             margin-top: 0.65rem;
 
@@ -99,7 +99,7 @@
 
     .card__heading {
         position: relative;
-        color: $primary-color;
+        color: $accent-color;
         transform: translateY(0.4rem);
     }
 
